@@ -1,0 +1,290 @@
+---
+---
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.data.cv.person.name }}'s CV</title>
+    <meta name="author" content="{{ site.data.cv.name }}"/>
+    <meta name="description" content="{{ site.data.cv.name }}'s CV"/>
+    <link rel="shortcut icon" href="/favicon.png">
+    <link href="{{ site.url }}/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ site.url }}/css/cv1.css" rel="stylesheet">
+    <link href="{{ site.url }}/css/flags/flags.css" rel="stylesheet">
+  
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" media="all"/>
+    <link href='https://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+  
+    <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: {families: ['Passion+One:400,700:latin']}
+      };
+      (function () {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
+  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+      <script>
+  
+      $(window).on('load', function() {
+        $('[data-github]').each(function () {
+        var _this = this;
+        var repo = $(_this).data('github')
+  
+        fetch('https://api.github.com/repos/' + repo).then(function (response) {
+          return response.json();
+        }).then(function (response) {
+          $(_this).find('[data-forks]').text(response.forks);
+          $(_this).find('[data-stars]').text(response.stargazers_count);
+        });
+      });
+      // code here
+      });
+  
+  </script>
+  
+  </head>
+
+<body>
+  <div class="container">
+
+      <div class="row header section-border">
+        <div class="col-xs-3">
+          <img src="{{ site.data.cv.company.logo }}" class="img-responsive img-circle" alt="{{ site.data.cv.company.name }}">   
+        </div>
+  
+        <div class="col-xs-9">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="name">{{ site.data.cv.person.name }}</h1>
+              <h2 class="profession">{{ site.data.cv.person.profession }}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row section section-border">
+        <div class="col-xs-3">
+          <h2>Abstrait</h2>
+                </div>
+  
+        <div class="col-xs-9">
+          {% for item in site.data.cv.abstract %}
+          <div class="row">
+            <div class="col-xs-12">
+              <p>{{ item.tr }}</p>
+            </div>
+          </div>
+          {% endfor %}
+
+          {% if site.data.cv.person.github %}
+          <div class="row">
+            <div class="col-xs-12">
+              <i class="fa fa-github"></i>Github : <a href="https://github.com/{{ site.data.cv.person.github }}">{{ site.data.cv.person.github }}</a>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+
+      <div class="row section section-border">
+        <div class="col-xs-3">
+          <h2>Dernières expériences</h2>
+        </div>
+
+        
+        <div class="col-xs-9">
+          {% for company in site.data.cv.career %}
+          <h3>
+            {{ company.companyName }}
+          </h3>
+          <h6>
+            {{ company.duration }}
+          </h6>
+
+            {% for mission in company.missions %}
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>{{ mission.position }}</b></h4>
+                  <h6 class="">{{ mission.dates }}, chez {{ mission.company }}</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">{{ mission.dates }}<br/>
+                {{ mission.company }} <i>({{ mission.location }})</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : {{ mission.summary }}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : {{ mission.company }}</p>
+                </div>
+              </div>
+              {% if mission.project %}
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Projet</b> : {{ mission.project }}</p>
+                </div>
+              </div>
+              {% endif %}
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : {{ mission.technologies | join: ", " }}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+    
+                {% if mission.description.size > 0 %}
+                <b>Description :</b>
+                <ul>
+                  {% for description in mission.description %}
+                  <li>{{ description }}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+                </div>
+              </div>
+              {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+
+
+    <div class="row section section-border pagebreakishere">
+      <div class="col-xs-3">
+        <h2>Technical skills</h2>
+      </div>
+      <div class="col-xs-9">
+        <div class="row">
+          {% for domain in site.data.cv.technicalSkills.domains %}
+          <div class="col-xs-4">
+
+            <h4 class="techSkillHeader"><i class="fa fa-terminal"></i> {{ domain.name }}</h4>
+            {% for competency in domain.competencies %} {{ competency.name }}
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{ competency.level }}%"></div>
+            </div>
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </div>
+
+        {% if site.data.cv.technicalSkills.list.size > 0 %}
+        <div>
+          <h4><i class="fa fa-male"></i> Key competencies:</h4>
+          <ul>
+            {% for item in site.data.cv.technicalSkills.list %}
+            <li>{{ item.tr }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+
+    <div class="row section">
+        <div class="col-xs-3"><h2>Open Source Projects</h2></div>
+        <div class="col-xs-9">
+        {% for project in site.data.cv.sideProjects %}
+            <div class="github-cards col-xs-6">
+            <a href="https://github.com/{{ project.link }}" class="github-card" data-github="{{ project.link }}">
+                <h3>{{ project.name }}</h3>
+                <p>{{ project.description }}</p>
+                <h5><i>As a {{ project.position }}</i></h5>
+                <span class="github-card__meta">
+                <span class="github-card__language-icon" style="color: #{{ project.color }};">●</span> {{ project.langs }}
+                </span>
+                <span class="github-card__meta">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <span data-stars>
+                    <i class="fa fa-spinner" aria-hidden="true"></i>
+                </span>
+                </span>
+                <span class="github-card__meta">
+                <i class="fa fa-code-fork" aria-hidden="true"></i>
+                <span data-forks>
+                    <i class="fa fa-spinner" aria-hidden="true"></i>
+                </span>
+                </span>
+            </a>
+
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+
+
+    <div class="row section">
+        <div class="col-xs-3"><h2>Certifications</h2></div>
+        <div class="col-xs-9">
+        {% for item in site.data.cv.certifications %}
+
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+        {% if thecycle == 'odd' %}
+        <div class="row">
+        {% endif %}
+
+        <div class="col-xs-6" style="padding-top: 5px; padding-bottom: 5px;">
+            <a href="{{ item.link }}"><img style="height: 90px;display: inline-block;vertical-align: middle;"
+                                        src="/images/cv/{{ item.badge }}"></a>
+            <div style="display: inline-block; vertical-align: middle;">
+            <div><b>{{ item.companyName }}</b></div>
+            <div><b>{{ item.certificationName }}</b></div>
+            <div>{{ item.issuer }}</div>
+            <div>{{ item.date }}</div>
+            </div>
+        </div>
+
+        {% if thecycle == 'even' %}
+        </div>
+        {% endif %}
+
+
+        {% endfor %}
+        </div>
+    </div>
+    </div>
+
+    <div class="row section section-border">
+      <div class="col-xs-3"><h2>Formation</h2></div>
+      <div class="col-xs-9">
+
+        {% for item in site.data.cv.education %}
+        <div class="row">
+          <div class="col-xs-12"><h4><b>{{ item.degree }}</b></h4></div>
+          <div class="col-xs-12">{{ item.name }}, <i class="fa fa-graduation-cap">{{ item.location }}</i></div>
+          <div class="col-xs-12">{{ item.dates }}</div>
+          <div class="col-xs-12"><a href="{{ item.link }}">{{ item.link }}</a></div>
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>
