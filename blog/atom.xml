@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.germainlefebvre.fr/blog</id>
+    <title>Germain Lefebvre Blog</title>
+    <updated>2024-12-04T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.germainlefebvre.fr/blog"/>
+    <subtitle>Germain Lefebvre Blog</subtitle>
+    <icon>https://blog.germainlefebvre.fr/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Piloter son thermostat Tado en Python]]></title>
+        <id>https://blog.germainlefebvre.fr/blog/piloter-thermostat-tado-python-libtado</id>
+        <link href="https://blog.germainlefebvre.fr/blog/piloter-thermostat-tado-python-libtado"/>
+        <updated>2024-12-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Piloter sonthermostat connecté Tado en Python n'a jamais été aussi simple.]]></summary>
+        <content type="html"><![CDATA[<p>Piloter sonthermostat connecté Tado en Python n'a jamais été aussi simple.</p>
+<p>Congratulations, you have made your first post!</p>
+<p>Feel free to play around and edit this post as much as you like.</p>]]></content>
+        <author>
+            <name>Germain Lefebvre</name>
+            <uri>https://germainlefebvre.fr</uri>
+        </author>
+        <category label="Domotique" term="Domotique"/>
+        <category label="Tado" term="Tado"/>
+        <category label="Bonjour" term="Bonjour"/>
+        <category label="libtado" term="libtado"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Radiateur connecté Sauter]]></title>
+        <id>https://blog.germainlefebvre.fr/blog/radiateur-connecte-sauter</id>
+        <link href="https://blog.germainlefebvre.fr/blog/radiateur-connecte-sauter"/>
+        <updated>2024-12-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Présentation des radiateurs connectés de la marque Sauter et de leur intégration dans l'application CozyTouch.]]></summary>
+        <content type="html"><![CDATA[<p>Présentation des radiateurs connectés de la marque Sauter et de leur intégration dans l'application CozyTouch.</p>
+<p>Congratulations, you have made your first post!</p>
+<p>Feel free to play around and edit this post as much as you like.</p>]]></content>
+        <author>
+            <name>Germain Lefebvre</name>
+            <uri>https://germainlefebvre.fr</uri>
+        </author>
+        <category label="Domotique" term="Domotique"/>
+        <category label="Hello" term="Hello"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Thermostat connecté Tado]]></title>
+        <id>https://blog.germainlefebvre.fr/blog/thermostat-connecte-tado</id>
+        <link href="https://blog.germainlefebvre.fr/blog/thermostat-connecte-tado"/>
+        <updated>2024-03-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Présentation des thermostat connecté de la marque Tado et de son application mobile.]]></summary>
+        <content type="html"><![CDATA[<p>Présentation des thermostat connecté de la marque Tado et de son application mobile.</p>
+<p>Congratulations, you have made your first post!</p>
+<p>Feel free to play around and edit this post as much as you like.</p>]]></content>
+        <author>
+            <name>Germain Lefebvre</name>
+            <uri>https://germainlefebvre.fr</uri>
+        </author>
+        <category label="Domotique" term="Domotique"/>
+        <category label="Tado" term="Tado"/>
+    </entry>
+</feed>
