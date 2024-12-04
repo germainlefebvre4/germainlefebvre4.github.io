@@ -73,14 +73,14 @@ const config: Config = {
       disableSwitch: true,
     },
 
-    announcementBar: {
-      id: 'coming_soon',
-      content:
-        'La section <b>Blog</b> arrive très bientôt...',
-      backgroundColor: '#eee',
-      textColor: '#444',
-      isCloseable: false,
-    },
+    // announcementBar: {
+    //   id: 'coming_soon',
+    //   content:
+    //     'La section <b>Blog</b> arrive très bientôt...',
+    //   backgroundColor: '#eee',
+    //   textColor: '#444',
+    //   isCloseable: false,
+    // },
 
     navbar: {
       title: 'Germain Lefebvre',
@@ -89,7 +89,7 @@ const config: Config = {
       //   src: 'img/logo.svg',
       // },
       items: [
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         // {to: '/me', label: 'Qui suis-je ?', position: 'left'},
         {
           href: 'https://github.com/germainlefebvre4',
@@ -109,10 +109,10 @@ const config: Config = {
               label: 'Accueil',
               to: '/',
             },
-            // {
-            //   label: 'Blog',
-            //   to: '/blog',
-            // },
+            {
+              label: 'Blog',
+              to: '/blog',
+            },
             // {
             //   label: 'Qui suis-je ?',
             //   to: '/me',

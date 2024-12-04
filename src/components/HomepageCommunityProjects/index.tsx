@@ -72,7 +72,7 @@ export default function HomepageProjects(): JSX.Element {
     <section className={styles.projects}>
       <div className="container">
         <div className={styles.projectsHeader}>
-          <Heading as="h1">Open Source Projects</Heading>
+          <Heading as="h1">Projets Open Source</Heading>
         </div>
         <div className="row">
           {ProjectList.map((props, idx) => (
