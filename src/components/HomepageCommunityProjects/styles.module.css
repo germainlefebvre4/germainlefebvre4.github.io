@@ -1,0 +1,16 @@
+.projects {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.projectsHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.projectSvg {
+  height: 200px;
+  width: 200px;
+}

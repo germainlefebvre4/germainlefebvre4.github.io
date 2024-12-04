@@ -1,0 +1,14 @@
+python:
+  label: Python
+  permalink: /python
+  description: Python
+
+tado:
+  label: Tado
+  permalink: /tado
+  description: Tado
+
+libtado:
+  label: Libtado
+  permalink: /libtado
+  description: Libtado
