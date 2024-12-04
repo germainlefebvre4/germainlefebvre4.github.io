@@ -14,3 +14,21 @@
   height: 200px;
   width: 200px;
 }
+
+.projectLinkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectLinkSvg {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
