@@ -1,6 +1,7 @@
+---
 name: Deploy to GitHub Pages
 
-on:
+on:  # yamllint disable rule:truthy
   push:
     branches:
       - main
