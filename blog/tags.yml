@@ -18,3 +18,18 @@ domotique:
   label: Domotique
   permalink: /domotique
   description: Domotique
+
+golang:
+  label: Golang
+  permalink: /golang
+  description: Golang
+
+tips:
+  label: Tips
+  permalink: /tips
+  description: Tips
+
+sauter:
+  label: Sauter
+  permalink: /sauter
+  description: Sauter
