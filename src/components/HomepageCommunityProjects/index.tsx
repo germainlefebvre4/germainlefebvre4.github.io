@@ -36,11 +36,22 @@ const ProjectList: ProjectItem[] = [
     github: 'https://github.com/crossplane-assistant/crossplane-assistant',
     docs: 'https://crossplane-assistant.readthedocs.io',
   },
+  {
+    title: 'CV Wonder',
+    image: 'img/cvwonder-logo.webp',
+    description: (
+      <>
+        CV Wonder est un CLI qui permet de générer un CV en HTML, PDF à partir d'un fichier YAML sur base d'un template configurable.
+      </>
+    ),
+    github: 'https://github.com/germainlefebvre4/cvwonder',
+    docs: 'https://cvwonder.readthedocs.io',
+  },
 ];
 
 function Project({title, image, description, github, docs}: ProjectItem) {
   return (
-    <div className={clsx('col col--6')}>
+    <div className={clsx('col col--4')}>
       <div className="text--center">
         <img src={image} alt={title} className={styles.projectSvg} />
       </div>
