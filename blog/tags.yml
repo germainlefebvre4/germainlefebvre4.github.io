@@ -28,3 +28,8 @@ tips:
   label: Tips
   permalink: /tips
   description: Tips
+
+sauter:
+  label: Sauter
+  permalink: /sauter
+  description: Sauter
