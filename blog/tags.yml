@@ -1,3 +1,4 @@
+---
 python:
   label: Python
   permalink: /python
@@ -12,3 +13,8 @@ libtado:
   label: Libtado
   permalink: /libtado
   description: Libtado
+
+domotique:
+  label: Domotique
+  permalink: /domotique
+  description: Domotique
