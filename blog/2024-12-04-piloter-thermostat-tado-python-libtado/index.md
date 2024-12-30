@@ -6,13 +6,14 @@ tags:
   - python
   - tado
   - libtado
+  - domotique
 ---
 
 Découvrez comment piloter votre thermostat Tado avec Python et la librairie libtado.
 Vous pourrez ainsi automatiser le changement de température de votre thermostat en fonction de vos besoins.
 La librairie libtado est également compatible avec les interface de domotique comme Home Assistant.
 
-![Tado Logo](./tado-logo.png)
+![Tado Logo](./tado-logo.webp)
 
 <!-- truncate -->
 
