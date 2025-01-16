@@ -140,4 +140,6 @@ Cette implémentation est simple et efficace, et je l'utilise dans les projets G
 
 ## Pour aller plus loin
 
-Une amélioration intéressante serait la gestion du remplacement (ou non) des fichiers et répertoires existants. Hormis cela, cette implémentation est simple et efficace.
+Cette approche nécessite des dépendances qui peuvent peser dans votre projet. Si c'est une application web, ce la ne posera aucun problème. Mais si c'est une application CLI, cela peut être un inconvénient car les dépendances alourdissent le binaire. On parle de de 10Mo à 20Mo pour les dépendances en question, rien de dramatique mais cela peut être un point à prendre en compte.
+
+Une amélioration intéressante serait de fournir la même fonctionnalité mais en réduisant la taille du binaire final. Pour cela, il faudrait réécrire la fonction de copie récursive sans dépendances.
