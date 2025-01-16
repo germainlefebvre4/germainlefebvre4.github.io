@@ -13,7 +13,7 @@ Les utilisateurs de Python un package manager pour installer des packages Python
 
 ## Problématique
 
-Je dois m'autentifier auprès d'un dépôt privé (dépôt d'entreprise par exemple) pour installer des packages Python. Comment puis-je m'authentifier avec `pip` ?
+Je dois m’authentifier auprès d'un dépôt privé (dépôt d'entreprise par exemple) pour installer des packages Python. Comment puis-je m'authentifier avec `pip` ?
 
 ## Solution
 
@@ -44,3 +44,9 @@ password = pass
 ## Pour aller plus loin
 
 Dans un prochain article, je vous montrerai comment s'authentifier avec Poetry, un autre package manager pour Python.
+
+## Liens utiles
+
+- [Python Package Index (PyPI)](https://pypi.org/)
+- [Pip - Configuration file](https://pip.pypa.io/en/stable/topics/configuration/#location)
+- [Pip - Authentication](https://pip.pypa.io/en/stable/topics/authentication/#basic-http-authentication)
