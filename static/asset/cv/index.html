@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germain's CV</title>
+    <meta name="author" content="Germain"/>
+    <meta name="description" content="Germain's CV"/>
+
+    <link href="/css/default.css" rel="stylesheet">
+
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" media="all"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Archivo+Black' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: {families: ['Passion+One:400,700:latin']}
+      };
+      (function () {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(window).on('load', function() {
+        $('[data-github]').each(function () {
+        var _this = this;
+        var repo = $(_this).data('github')
+
+        fetch('https://api.github.com/repos/' + repo).then(function (response) {
+          return response.json();
+        }).then(function (response) {
+          $(_this).find('[data-forks]').text(response.forks);
+          $(_this).find('[data-stars]').text(response.stargazers_count);
+        });
+      });
+      // code here
+      });
+    </script>
+  </head>
+
+  <body>
+    <script src="http://localhost:35729/livereload.js"></script>
+
+    <div class="container">
+
+      <div class="row header section-border">
+        <div class="col-xs-3">
+
+            <img src="images/zatsit-logo.webp" class="img-responsive" alt="Zatsit">
+
+        </div>
+
+        <div class="col-xs-9">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="name">Germain</h1>
+              <h2 class="profession">Bâtisseur de Plateformes et de Nuages</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row section section-border">
+        <div class="col-xs-3">
+          <h2>Abstrait</h2>
+        </div>
+
+        <div class="col-xs-9">
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p>J'ai grandi dans l'univers des systèmes Linux. Ma volonté de progression m'a rapidement amené vers des outils automatisation, d'Infra-as-Code, ainsi que les plateformes de CI/CD.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p>La découverte de l'univers des conteneurs est digne de 'Rencontre avec le 3ème type'. C'est devenu un écosystème que j'aime tester, utiliser et transmettre.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p>Mon amour pour le logiciel libre m'a amené à contribuer pour des librairies, sqlfluff, libtado, crossplane-assistant ou encore cvwonder.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p>J'aime passer du temps sur des 'side projects' qui peuvent aider, servir et simplifier le quotidien des Techs. Ce que nous enseigne la sphère de l'open source est vertueux : l'entraide et le partage.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row section section-border">
+        <div class="col-xs-3">
+          <h2>Réseaux sociaux</h2>
+        </div>
+
+        <div class="col-xs-9">
+
+            <div class="col-xs-3">
+              <i class="fa fa-github"></i>Github<br>
+              <a href="https://github.com/germainlefebvre4">germainlefebvre4</a>
+            </div>
+
+
+
+            <div class="col-xs-3">
+              <i class="fa fa-github"></i>Stackoverflow<br>
+              <a href="https://stackoverflow.com/users?search=germainlefebvre4">germainlefebvre4</a>
+            </div>
+
+
+
+            <div class="col-xs-3">
+              <i class="fa fa-github"></i>Linkedin<br>
+              <a href="https://www.linkedin.com/in/germainlefebvre4">germainlefebvre4</a>
+            </div>
+
+
+
+            <div class="col-xs-3">
+              <i class="fa fa-github"></i>X<br>
+              <a href="https://x.com/germainlefebvr4">germainlefebvr4</a>
+            </div>
+
+        </div>
+      </div>
+      <div class="row section section-border">
+        <div class="col-xs-3">
+          <h2>Dernières expériences</h2>
+        </div>
+
+
+        <div class="col-xs-9">
+
+          <h3>
+
+              <img src="images/zatsit-logo.webp" alt="Zatsit" style="max-width: 50px; max-height: 50px;" />
+
+            Zatsit
+          </h3>
+          <h6>
+            10 mois, aujourd'hui
+          </h6>
+
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Platform Engineer</b></h4>
+                  <h6 class="">2024, mars - 2024, décembre, chez Adeo</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2024, mars - 2024, décembre<br/>
+                Adeo <i>(Ronchin, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Construire une IDP, plateforme interne de développement, totalement managée pour aider les développeurs à se focaliser sur le code. Sur base du code source, la plateforme provisionne l'infrastructure sous-jacente, les base de données, la construction des artefact et publication sur la registry, le déploiement dans Kubernetes, l'intégration du monitoring avec Datadog et construction des Monitors.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Adeo</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : ArgoCD, Kubernetes, K8s Operrator, Crossplane, Vault, Github Actions, JFrog Artifactory, Backstage, Python, Golang</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Développement de l'operator Kubernetes responsable du provisioning des bases de données</li>
+
+                  <li>Développement des Compositions Crossplane pour provisionner les base de données</li>
+
+                  <li>Développement de l'API de l'IDP en Golang</li>
+
+                  <li>Déploiement avec ArgoCD</li>
+
+                  <li>Vulgarisation d'une architecture applicative en langage déclaratif (yaml)</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+
+          <h3>
+
+              <img src="images/ineat-logo.webp" alt="Ineat" style="max-width: 50px; max-height: 50px;" />
+
+            Ineat
+          </h3>
+          <h6>
+            7 ans, 10 mois
+          </h6>
+
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Lead Tech Ops</b></h4>
+                  <h6 class="">2022, juin - 2024, février, chez Siemens</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2022, juin - 2024, février<br/>
+                Siemens <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Mettre en place l'infrastructure d'un puit de logs et métriques.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Siemens</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : Linux, Apache Zookeeper, Apache Kafka, Kafka Streams, Clickhouse, Prometheus, Prometheus Exporters, AlertManager, Fluentbit, Terraform, Ansible, Gitlab CI, Python, Pytest testinfra</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Création d'un produit déclinable (couches de configuration multiples)</li>
+
+                  <li>Création d'un générateur de configuration pour les déclinaisons clients</li>
+
+                  <li>Développement d'un système de déploiement offline et asynchrone</li>
+
+                  <li>Industrialisation de la plateforme de développement</li>
+
+                  <li>Création d'environnements éphémères pour rendre les développeurs autonomes</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Lead Tech Ops</b></h4>
+                  <h6 class="">2023, juin - 2024, février, chez Kiloutou</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2023, juin - 2024, février<br/>
+                Kiloutou <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Maintenir opérationnellement les infrastructures liées aux applications. Gestion d'une équipe de 3 personnes pour assurer l'infogérance des applications du client. L'une d'entre elle est le site kiloutou.fr.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Kiloutou</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Projet</b> : Kite</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : Linux, Terraform, Gitlab CI</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Supervision de la plateforme</li>
+
+                  <li>Amélioration continue de la partie Cloud et Infra</li>
+
+                  <li>Analyse et mitigation sur la partie sécurité</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Formateur Ineat Academy</b></h4>
+                  <h6 class="">2018, novembre - 2023, décembre, chez Ineat</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2018, novembre - 2023, décembre<br/>
+                Ineat <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Les formations dispensées sont Linux, Ansible, Docker, Kubernetes, Rancher, Terraform</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Ineat</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : Linux, Ansible, Docker, Kubernetes, Rancher, Terraform</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Création des supports de formation</li>
+
+                  <li>Animation des formations</li>
+
+                  <li>Questionnaire d'évaluation</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Cloud Data Ops</b></h4>
+                  <h6 class="">2021, mars - 2021, décembre, chez UTB</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2021, mars - 2021, décembre<br/>
+                UTB <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Collecter, ingérer les bons de livraison et les mettre en corrélation avec les données présentes dans l'ERP en vue de détecter les écarts sur les quantités (erreurs fournisseur, erreurs de livraison, perte de produit, etc).</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : UTB</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : GCP, Google Document AI, Python</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Ingestion de bons de livraison dans Google DocumentAI</li>
+
+                  <li>Interprétation des résultats et manipulation des données extraites</li>
+
+                  <li>Réorganisation et correction des résultats pour réduire le taux d'erreur</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Accompagnement Ops</b></h4>
+                  <h6 class="">2021, septembre - 2024, février, chez Ineat Group</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2021, septembre - 2024, février<br/>
+                Ineat Group <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Accompagner les équipes techniques sur le projet.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Ineat Group</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : Azure, Kubernetes, Azure Keyvault, ArgoCD</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Mise en place de la LZ Azure</li>
+
+                  <li>Configuration de Azure Secret Store CSI driver pour connecter Kubernetes à Azure Keyvault</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Ops Builder</b></h4>
+                  <h6 class="">2021, juillet - 2024, août, chez Faber Novel</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2021, juillet - 2024, août<br/>
+                Faber Novel <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Construction et déploiement des plateformes applicatives.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Faber Novel</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : Azure, Kubernetes, Jenkins, Prometheus</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Configuration des Helm Charts applicatifs</li>
+
+                  <li>Configuration des pipeline Jenkins</li>
+
+                  <li>Configuration de Prometheus dans Kubernetes</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Architect Cloud</b></h4>
+                  <h6 class="">2021, avril - 2024, juillet, chez Everysens</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2021, avril - 2024, juillet<br/>
+                Everysens <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Architecte Cloud</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Everysens</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : GCP, Kubernetes, Nginx, modSecurity, Monitoring, Gitlab CI</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Configuration de Nginx avec le WAF modSecurity dans Kubernetes</li>
+
+                  <li>Collecte et création de log-based metrics pour surveiller les logs du WAF</li>
+
+                  <li>Déploiement de GCP OS Lifecycle</li>
+
+                  <li>Déploiement dans Gitlab CI</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Accompagnement technique et organisationnel</b></h4>
+                  <h6 class="">2022, février - 2023, mars, chez Martin Belaysoud</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2022, février - 2023, mars<br/>
+                Martin Belaysoud <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Accompagnement des équipes techniques au changement d'organisation, se diriger vers une approche DevOps.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Martin Belaysoud</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : Kubernetes, Jenkins, Ansible, Terraform, Kubernetes</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Audit des équipes techniques et de l'organisation</li>
+
+                  <li>Acculturation à l'approche DevOps</li>
+
+                  <li>Acculturation sur les technologies d'automatisation</li>
+
+                  <li>Formation sur Terraform et Kubernetes</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Audit technique</b></h4>
+                  <h6 class="">2022, septembre - 2022, septembre, chez Adeo, Leroy Merlin</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2022, septembre - 2022, septembre<br/>
+                Adeo, Leroy Merlin <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Audit des applications liées à la gestion des chantiers et des artisans dans tout l'éco-système Adéo et Leroy Merlin.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Adeo, Leroy Merlin</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : GCP, Kubernetes, Terraform</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Interview de 5 équipes techniques (FR, ES, BR)</li>
+
+                  <li>Audit des infrastructures et des projets Cloud</li>
+
+                  <li>Présentation et retour suite au rapport d'audit</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Accompagnement à la conteneurisation</b></h4>
+                  <h6 class="">2019, octobre - 2021, juin, chez CGI Finance</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2019, octobre - 2021, juin<br/>
+                CGI Finance <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Accompagnement à la conteneurisation</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : CGI Finance</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : VMWare, Kubernetes, Rancher, Helm, Azure DevOps, Open Policy Agent, Hashicorp Vault</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Audit de l'infrastructure</li>
+
+                  <li>Acculturation et accompagnement des équipes techniques</li>
+
+                  <li>Mise en place de la plateforme de conteneurs</li>
+
+                  <li>Mise en place de la chaine de déploiement Dev to Prod</li>
+
+                  <li>Implémentation de Gatekeeper (Open Policy Agent)</li>
+
+                  <li>Acculturation à Hashicorp Vault</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Cloud Architect</b></h4>
+                  <h6 class="">2022, janvier - 2022, septembre, chez Trixit</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2022, janvier - 2022, septembre<br/>
+                Trixit <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Déploiement d'une plateforme de paiement en 3x sans frais pour les professionnels.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Trixit</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : GCP, Kubernetes, Terraform, Trivy, Github Actions, Gravitee, Monitoring</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Création des projets Cloud avec Terraform</li>
+
+                  <li>Configuration des pipelines sur Github Actions</li>
+
+                  <li>Déploiement de Gravitee dans Kubernetes</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Audit technique</b></h4>
+                  <h6 class="">2021, septembre - 2021, septembre, chez Finorpa</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2021, septembre - 2021, septembre<br/>
+                Finorpa <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Audit des applications d'une société sous le mandat de Finorpa.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Finorpa</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : AWS</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Interview des équipes techniques</li>
+
+                  <li>Audit des infrastructures et des projets Cloud</li>
+
+                  <li>Présentation et retour suite au rapport d'audit</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Ops Builder</b></h4>
+                  <h6 class="">2020, juillet - 2021, avril, chez Leroy Merlin</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2020, juillet - 2021, avril<br/>
+                Leroy Merlin <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Ops Builder</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Leroy Merlin</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : GCP, Terraform, Kubernetes, Openshift, GKE, Helm, Gitlab CI, Github Actions</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Industrialisation de l'infrastructure de Terraform</li>
+
+                  <li>Implémentation de la CI/CD</li>
+
+                  <li>Conteneurisation des applications dans K8s</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Architect Cloud</b></h4>
+                  <h6 class="">2019, septembre - 2020, mars, chez Adeo</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2019, septembre - 2020, mars<br/>
+                Adeo <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Architecte Cloud GCP & DevOps</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Adeo</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : GKE, Kubernetes, Helm, Gitlab CI</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Mise en place de la conteneurisation de l'application (micro-services NestJS) de la Dev à la Prod.</li>
+
+                  <li>Implémentation de la CI/CD</li>
+
+                  <li>SAST et sécurité des applications (code et images Docker)</li>
+
+                  <li>Simplification des déploiements sur les environnements</li>
+
+                  <li>Création d'environnements de travail éphémères</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Architecte Cloud GCP</b></h4>
+                  <h6 class="">2019, février - 2029, août, chez Cooptalis (Anywr)</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2019, février - 2029, août<br/>
+                Cooptalis (Anywr) <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Architecte Cloud GCP</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Cooptalis (Anywr)</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : GCE, GKE, Kubernetes, Helm, Ansible, Kafka, CircleCI, Elastic Cloud</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Automatisation d'une plateforme GCE et GKE avec Terraform</li>
+
+                  <li>Déploiement des applications à la volée avec CircleCI</li>
+
+                  <li>Déploiement de Clusters Kafka avec Terraform et Ansible</li>
+
+                  <li>Remontées des logs et métriques dans Elastic Cloud</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Accompagnement infrastructure</b></h4>
+                  <h6 class="">2019, décembre - 2019, mars, chez Galeries Lafayette</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2019, décembre - 2019, mars<br/>
+                Galeries Lafayette <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Architecte Technique en Infrastructure</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Galeries Lafayette</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : VMWare, Redis, RabbitMQ</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Accompagnement a la mise en place des briques Redis et RabbitMQ en haute disponibilité</li>
+
+                  <li>Accompagnement sur les axes de supervision technique des briques techniques</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Architecte Cloud</b></h4>
+                  <h6 class="">2017, septembre - 2017, novembre, chez Cofidis</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2017, septembre - 2017, novembre<br/>
+                Cofidis <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Intervention ponctuelle chez le client dans le but de mettre en place une infrastructure sur AWS.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Cofidis</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : Linux, Apache, PHP, AWS (VPC, EC2, RDS, ELB, CloudWatch, IAM), CloudFormation</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Création de la stack avec CloudFormation</li>
+
+                  <li>Scalabilité en fonction du trafic et de la charge</li>
+
+                  <li>Monitoring système et applicatif</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>SysOps</b></h4>
+                  <h6 class="">2019, décembre - 2019, mars, chez Decathlon</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2019, décembre - 2019, mars<br/>
+                Decathlon <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : SysOps</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Decathlon</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : Linux, RPM, Apache, Oracle Database, LDAP, Ansible, Rundeck, Splunk, ELK, Docker, Rancher, Jenkins, CDN</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Administration système et socle des plateformes</li>
+
+                  <li>Gestion des environnements</li>
+
+                  <li>Intégration technique de la solution Oracle Commerce et automatisation complète de son installation</li>
+
+                  <li>Mise en place d'un cluster OpenLDAP world-wide en mode Multi-Master.</li>
+
+                  <li>Mise en place d'outils et socles : Jenkins, Sonar, Docker, Rancher</li>
+
+                  <li>Mise en place d'outils de Monitoring : Splunk, ELK, Grafana</li>
+
+                  <li>Gestion du CDN Europe de la plateforme e-commerce</li>
+
+                  <li>Automatisation de "tout ce qui est possible d'automatiser" avec Ansible, Rundeck, Jenkins, scripts Python</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+
+          <h3>
+
+              <img src="images/cgi-logo.webp" alt="CGI" style="max-width: 50px; max-height: 50px;" />
+
+            CGI
+          </h3>
+          <h6>
+
+          </h6>
+
+
+            <div class="row">
+              <div class="col-xs-6">
+                  <h4><b>Intégrateur Système et Applicatif</b></h4>
+                  <h6 class="">2014, juillet- 2016, avril, chez Auchan</h6>
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right">2014, juillet- 2016, avril<br/>
+                Auchan <i>(Lille, France)</i></h5>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Mission</b> : Intégrer les livrables fournis par les Centres de Services, assurer leur qualité, documenter leur installation en vue d'être déployé en production. Rationalisation des installation et homogénéisation des livrables.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Client</b> : Auchan</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p><b>Technologies</b> : Linux, Apache Zookeeper, Apache Kafka, Kafka Streams, Clickhouse, Prometheus, Prometheus Exporters, AlertManager, Fluentbit, Terraform, Ansible, Gitlab CI, Python, Pytest testinfra</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+
+
+                <b>Description :</b>
+                <ul>
+
+                  <li>Intégration des artefacts projet (jar, war, etc)</li>
+
+                  <li>Documentation de l'installation</li>
+
+                  <li>Rationalisation et homogénéistaion des installations</li>
+
+                  <li>Création d'un SAS de validation des livrables en entrées (sanity check)</li>
+
+                  <li>Migration des données entre les bases Oracle (11g et 12c)</li>
+
+                </ul>
+
+                </div>
+              </div>
+
+
+        </div>
+      </div>
+      <div class="row section section-border pagebreakishere">
+        <div class="col-xs-3">
+          <h2>Technical skills</h2>
+        </div>
+        <div class="col-xs-9">
+          <div class="row">
+
+            <div class="col-xs-4">
+
+              <h4 class="techSkillHeader"><i class="fa fa-terminal"></i> Cloud</h4>
+              AWS
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+              </div>
+              GCP
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+              </div>
+              Azure
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+              </div>
+
+            </div>
+
+            <div class="col-xs-4">
+
+              <h4 class="techSkillHeader"><i class="fa fa-terminal"></i> Ops</h4>
+              Linux
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+              </div>
+              Ansible
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+              </div>
+              Terraform
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+              </div>
+              Docker
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+              </div>
+              Kubernetes
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+              </div>
+
+            </div>
+
+            <div class="col-xs-4">
+
+              <h4 class="techSkillHeader"><i class="fa fa-terminal"></i> Others</h4>
+              Golang
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+              </div>
+              Python
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+              </div>
+              Gitlab CI
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+              </div>
+              Github Actions
+              <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col-xs-3"><h2>Open Source Projects</h2></div>
+          <div class="col-xs-9">
+
+              <div class="github-cards col-xs-6">
+              <a href="https://github.com/germainlefebvre4/libtado" class="github-card" data-github="germainlefebvre4/libtado">
+                  <h3>libtado</h3>
+                  <p>A Library to control your Tado Smart Thermostat.</p>
+                  <h5><i>As a maintainer</i></h5>
+                  <span class="github-card__meta">
+                  <span class="github-card__language-icon" style="color: #3572A5;">●</span> Python
+                  </span>
+                  <span class="github-card__meta">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span data-stars>
+                      <i class="fa fa-spinner" aria-hidden="true"></i>
+                  </span>
+                  </span>
+                  <span class="github-card__meta">
+                  <i class="fa fa-code-fork" aria-hidden="true"></i>
+                  <span data-forks>
+                      <i class="fa fa-spinner" aria-hidden="true"></i>
+                  </span>
+                  </span>
+              </a>
+
+              </div>
+
+              <div class="github-cards col-xs-6">
+              <a href="https://github.com/sqlfluff/sqlfluff" class="github-card" data-github="sqlfluff/sqlfluff">
+                  <h3>sqlfluff</h3>
+                  <p>A modular SQL linter and auto-formatter with support for multiple dialects and templated code.</p>
+                  <h5><i>As a contributor</i></h5>
+                  <span class="github-card__meta">
+                  <span class="github-card__language-icon" style="color: #3572A5;">●</span> Python
+                  </span>
+                  <span class="github-card__meta">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span data-stars>
+                      <i class="fa fa-spinner" aria-hidden="true"></i>
+                  </span>
+                  </span>
+                  <span class="github-card__meta">
+                  <i class="fa fa-code-fork" aria-hidden="true"></i>
+                  <span data-forks>
+                      <i class="fa fa-spinner" aria-hidden="true"></i>
+                  </span>
+                  </span>
+              </a>
+
+              </div>
+
+              <div class="github-cards col-xs-6">
+              <a href="https://github.com/crossplane-assistant/crossplane-assistant" class="github-card" data-github="crossplane-assistant/crossplane-assistant">
+                  <h3>crossplane-assistant</h3>
+                  <p>A CLI to help you to manage your Crossplane resources.</p>
+                  <h5><i>As a maintainer</i></h5>
+                  <span class="github-card__meta">
+                  <span class="github-card__language-icon" style="color: #3572A5;">●</span> Go
+                  </span>
+                  <span class="github-card__meta">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span data-stars>
+                      <i class="fa fa-spinner" aria-hidden="true"></i>
+                  </span>
+                  </span>
+                  <span class="github-card__meta">
+                  <i class="fa fa-code-fork" aria-hidden="true"></i>
+                  <span data-forks>
+                      <i class="fa fa-spinner" aria-hidden="true"></i>
+                  </span>
+                  </span>
+              </a>
+
+              </div>
+
+              <div class="github-cards col-xs-6">
+              <a href="https://github.com/germainlefebvre4/cvwonder" class="github-card" data-github="germainlefebvre4/cvwonder">
+                  <h3>cvwonder</h3>
+                  <p>A CLI to render your CV from a YAML file.</p>
+                  <h5><i>As a maintainer</i></h5>
+                  <span class="github-card__meta">
+                  <span class="github-card__language-icon" style="color: #3572A5;">●</span> Go
+                  </span>
+                  <span class="github-card__meta">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <span data-stars>
+                      <i class="fa fa-spinner" aria-hidden="true"></i>
+                  </span>
+                  </span>
+                  <span class="github-card__meta">
+                  <i class="fa fa-code-fork" aria-hidden="true"></i>
+                  <span data-forks>
+                      <i class="fa fa-spinner" aria-hidden="true"></i>
+                  </span>
+                  </span>
+              </a>
+
+              </div>
+
+          </div>
+      </div>
+      <div class="row section">
+        <div class="col-xs-3"><h2>Certifications</h2></div>
+          <div class="col-xs-9">
+
+              <div class="row">
+                <div class="col-xs-6" style="padding-top: 5px; padding-bottom: 5px;">
+                  <a href="https://www.credly.com/badges/e7955ad8-1d54-4eb3-ac0f-1f69e644e14c/public_url"><img style="height: 90px;display: inline-block;vertical-align: middle;"
+                                              src="images/aws-certified-cloud-practitioner.png"></a>
+                  <div style="display: inline-block; vertical-align: middle;">
+                  <div><b>AWS</b></div>
+                  <div><b>Cloud Practitioner</b></div>
+                  <div>Person View</div>
+                  <div>Février 2022</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-6" style="padding-top: 5px; padding-bottom: 5px;">
+                  <a href="https://www.credly.com/badges/dd09dc40-9ef8-43a4-addb-d861d4dadf26/public_url"><img style="height: 90px;display: inline-block;vertical-align: middle;"
+                                              src="images/aws-certified-solutions-architect-associate.png"></a>
+                  <div style="display: inline-block; vertical-align: middle;">
+                  <div><b>AWS</b></div>
+                  <div><b>Solutions Architect Associate</b></div>
+                  <div>Coursera</div>
+                  <div>Mars 2018</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-6" style="padding-top: 5px; padding-bottom: 5px;">
+                  <a href="https://www.credly.com/badges/f0054964-7101-47a0-82b2-16d351eb08f2/public_url"><img style="height: 90px;display: inline-block;vertical-align: middle;"
+                                              src="images/aws-certified-sysops-administrator-associate.png"></a>
+                  <div style="display: inline-block; vertical-align: middle;">
+                  <div><b>AWS</b></div>
+                  <div><b>SysOps Administrator Associate</b></div>
+                  <div>Coursera</div>
+                  <div>Août 2017</div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+      </div>
+      <div class="row section">
+        <div class="col-xs-3"><h2>Formation</h2></div>
+
+        <div class="col-xs-9">
+
+            <div class="row">
+              <div class="col-xs-12">
+                <h3>
+
+                    <img src="images/centrale-lille-logo.webp" alt="IG2I - Centrale" style="max-width: 50px; max-height: 50px;">
+
+                  IG2I - Centrale
+                </h3>
+              </div>
+              <div class="col-xs-12"><b>Titre d'ingénieur (BAC+5)</b></></div>
+              <div class="col-xs-12">IG2I - Centrale, <i class="fa fa-graduation-cap">Lens, France</i></div>
+              <div class="col-xs-12">2019 - 2014</div>
+              <div class="col-xs-12"><a href="https://ig2i.centralelille.fr">https://ig2i.centralelille.fr</a></div>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+</html>
